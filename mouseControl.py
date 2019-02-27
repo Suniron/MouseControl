@@ -10,6 +10,9 @@ class Application(Tk):
         # build parents:
         Tk.__init__(self)
 
+        # Ignore fails:
+        pyautogui.FAILSAFE = False
+
         # state flag for switch on/off:
         self.state = False
 
